@@ -7,7 +7,7 @@ jQuery(window).load(function($) {
     jQuery('#load-more').click(function() {
         var self = jQuery(this);
         self.hide();
-        var url = 'ajax/portfolio-3column.html';
+        var url = 'ajax/portfolio-masonry.html';
         var loadanim = jQuery('a#load-more i');
         loadanim.addClass('spinef');
         var itemLoad = 4;
@@ -34,7 +34,7 @@ jQuery(window).load(function($) {
     jQuery('#load-more-2col').click(function() {
         var self = jQuery(this);
         self.hide();
-        var url = 'ajax/portfolio-2column.html';
+        var url = 'ajax/portfolio-masonry.html';
         var loadanim = jQuery('a#load-more i');
         loadanim.addClass('spinef');
         var itemLoad = 4;
