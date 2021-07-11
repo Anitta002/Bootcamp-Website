@@ -50,6 +50,26 @@
 
     <!-- Modernizer & Respond js -->
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <script>
+        function readMore() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read More";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read Less";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+    <style>
+        #more {display: none;}
+    </style>
 </head>
 
 <body>
@@ -146,13 +166,15 @@
                         <hr>
                         <h4>The SJCET Startup Bootcamp- IEDC (Innovation and Entrepreneurship Development Centre)</h4>
                         <p>
-                            was set up on 9th March 2015 as a part of the Kerala Startup Mission (KSUM) initiative to develop a startup culture amongst students. The IEDCs are platforms set up in Engineering, Management, Arts & Science Colleges and Polytechnics with an aim to provide students an opportunity to experiment and innovate. KSUM has set up IEDCs in 226 institutions across the State which provide avenues for creative students to learn, collaborate and transform their innovative ideas into prototypes of viable products and services. 
+                            was set up on 9th March 2015 as a part of the Kerala Startup Mission (KSUM) initiative to develop a startup culture amongst students. The IEDCs are platforms set up in Engineering, Management, Arts & Science Colleges and Polytechnics with an aim to provide students an opportunity to experiment and innovate. KSUM has <span id="dots">...</span><span id="more">set up IEDCs in 226 institutions across the State which provide avenues for creative students to learn, collaborate and transform their innovative ideas into prototypes of viable products and services. 
                             With the various ideation and problem solving maker events conducted by the Bootcamp, students are encouraged to challenge themselves and come up with innovative ideas. Students are provided with expert mentorship to convert their ideas into prototypes, and eventually into marketable products. Infusory Future Tech Labs Pvt Ltd ( graduated in 2018) and Lamaara Technologies Pvt Ltd (graduated in 2019) are two startup companies founded by the students of SJCET Palai and incubated in the SJCET Startup Bootcamp. During their incubation period, Lamaara Technologies Pvt Ltd received a brand equity investment worth 50 lakh Rs from the Times Group.
                             SJCET Bootcamp received the Best Performing IEDC award in 2017 and 2019. In 2019, Bootcamp conducted the Startup Yathra and also received the Hero of the Startup award, the best sustainable startup award, and the best women wannapreneur award. In the Smart India Hackathon 2019, organised by MHRD and AICTE , the product ‘Blackbox for drones’ from Bootcamp received the best innovative product award. In 2020, SJCET Startup Bootcamp hosted the NASA Space Apps Challenge and gained recognition all over the nation.
-                            Other major achievements are: NASSCOM STARTUP 20-20 winner, 2015. Team PENTA from SJCET Palai won the first prize worth 1 lakh Rs at the ICTT ECHATHLON organised by the ICT Academy of Kerala in 2016.</p>
+                            Other major achievements are: NASSCOM STARTUP 20-20 winner, 2015. Team PENTA from SJCET Palai won the first prize worth 1 lakh Rs at the ICTT ECHATHLON organised by the ICT Academy of Kerala in 2016.</span></p>
+                            <button onclick="readMore()" id="myBtn" class="nav" style="width: fit-content; padding-left: 5px;">Read More</button>
                     </article>
                 </div>
             </div>
+            <div style="padding: 5px;"></div>
             <div class="col-md-5 col-md-offset-1 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
                 <div class="row">
                     <div id="history-images" class="owl-carousel">
@@ -238,18 +260,18 @@
                         <div class="img home-portfolio-image">
                             <img src="img/home-portfolio/web1.jpg" alt="Portfolio Item">
                             <div class="overlay-thumb">
-                                <a href="javascript:void(0)" class="like-product">
+                                <!-- <a href="javascript:void(0)" class="like-product">
                                     <i class="ion-ios-heart-outline"></i>
                                     <span class="like-product">Liked</span>
                                     <span class="output">250</span>
-                                </a>
+                                </a> -->
                                 <div class="details">
                                     <span class="title">Introduction to UX Design</span>
                                     <span class="info">Tom Luckose</span>
                                 </div>
                                 <span class="btnBefore"></span>
                                 <span class="btnAfter"></span>
-                                <a class="main-portfolio-link" href="single-project.html"></a>
+                                <a class="main-portfolio-link" ></a>
                             </div>
                         </div>
                     </div>
@@ -257,18 +279,18 @@
                         <div class="img home-portfolio-image">
                             <img src="img/home-portfolio/work1.jpg" alt="Portfolio Item">
                             <div class="overlay-thumb">
-                                <a href="javascript:void(0)" class="like-product">
+                                <!-- <a href="javascript:void(0)" class="like-product">
                                     <i class="ion-ios-heart-outline"></i>
                                     <span class="like-product">Liked</span>
                                     <span class="output">60</span>
-                                </a>
+                                </a> -->
                                 <div class="details">
                                     <span class="title">Inspire '20<span>
                                     <span class="info">Thomson Tom</span>
                                 </div>
                                 <span class="btnBefore"></span>
                                 <span class="btnAfter"></span>
-                                <a class="main-portfolio-link" href="single-project.html"></a>
+                                <a class="main-portfolio-link" ></a>
                             </div>
                         </div>
                     </div>
@@ -277,18 +299,18 @@
                         <div class="img home-portfolio-image">
                             <img src="img/home-portfolio/pod.jpg" alt="Portfolio Item">
                             <div class="overlay-thumb">
-                                <a href="javascript:void(0)" class="like-product">
+                                <!-- <a href="javascript:void(0)" class="like-product">
                                     <i class="ion-ios-heart-outline"></i>
                                     <span class="like-product">Liked</span>
                                     <span class="output">1060</span>
-                                </a>
+                                </a> -->
                                 <div class="details">
                                     <span class="title">Out of CURIOSITY</span>
                                     <span class="info">A series of Podcast episodes of various speakers conducted by <i>SJCET Bootcamp</i> </span>
                                 </div>
                                 <span class="btnBefore"></span>
                                 <span class="btnAfter"></span>
-                                <a class="main-portfolio-link" href="single-project.html"></a>
+                                <a class="main-portfolio-link" ></a>
                             </div>
                         </div>
                     </div>
@@ -297,18 +319,18 @@
                         <div class="img home-portfolio-image">
                             <img src="img/home-portfolio/sum1.jpg" alt="Portfolio Item">
                             <div class="overlay-thumb">
-                                <a href="javascript:void(0)" class="like-product">
+                                <!-- <a href="javascript:void(0)" class="like-product">
                                     <i class="ion-ios-heart-outline"></i>
                                     <span class="like-product">Liked</span>
                                     <span class="output">1060</span>
-                                </a>
+                                </a> -->
                                 <div class="details">
                                     <span class="title">IEDC Summit 2021</span>
                                     <span class="info">Virtual Summit </span>
                                 </div>
                                 <span class="btnBefore"></span>
                                 <span class="btnAfter"></span>
-                                <a class="main-portfolio-link" href="single-project.html"></a>
+                                <a class="main-portfolio-link" ></a>
                             </div>
                         </div>
                     </div>
@@ -317,18 +339,18 @@
                         <div class="img home-portfolio-image">
                             <img src="img/home-portfolio/web2.jpg" alt="Portfolio Item">
                             <div class="overlay-thumb">
-                                <a href="javascript:void(0)" class="like-product">
+                                <!-- <a href="javascript:void(0)" class="like-product">
                                     <i class="ion-ios-heart-outline"></i>
                                     <span class="like-product">Liked</span>
                                     <span class="output">400</span>
-                                </a>
+                                </a> -->
                                 <div class="details">
                                     <span class="title">Applications of AI</span>
                                     <span class="info">Abu Mathew Thoppan </span>
                                 </div>
                                 <span class="btnBefore"></span>
                                 <span class="btnAfter"></span>
-                                <a class="main-portfolio-link" href="single-project.html"></a>
+                                <a class="main-portfolio-link" ></a>
                             </div>
                         </div>
                     </div>
@@ -337,18 +359,18 @@
                         <div class="img home-portfolio-image">
                             <img src="img/home-portfolio/pod1.jpg" alt="Portfolio Item">
                             <div class="overlay-thumb">
-                                <a href="javascript:void(0)" class="like-product">
+                                <!-- <a href="javascript:void(0)" class="like-product">
                                     <i class="ion-ios-heart-outline"></i>
                                     <span class="like-product">Liked</span>
                                     <span class="output">1060</span>
-                                </a>
+                                </a> -->
                                 <div class="details">
                                     <span class="title">Anto Patrex</span>
                                     <span class="info">Co-Founder & CEO of Lamaara</span>
                                 </div>
                                 <span class="btnBefore"></span>
                                 <span class="btnAfter"></span>
-                                <a class="main-portfolio-link" href="single-project.html"></a>
+                                <a class="main-portfolio-link" ></a>
                             </div>
                         </div>
                     </div>
@@ -357,18 +379,18 @@
                         <div class="img home-portfolio-image">
                             <img src="img/home-portfolio/pod2.jpg" alt="Portfolio Item">
                             <div class="overlay-thumb">
-                                <a href="javascript:void(0)" class="like-product">
+                                <!-- <a href="javascript:void(0)" class="like-product">
                                     <i class="ion-ios-heart-outline"></i>
                                     <span class="like-product">Liked</span>
                                     <span class="output">1060</span>
-                                </a>
+                                </a> -->
                                 <div class="details">
                                     <span class="title">Sadasivan Nambiar</span>
                                     <span class="info">Career consultant at Siva Training Solutions </span>
                                 </div>
                                 <span class="btnBefore"></span>
                                 <span class="btnAfter"></span>
-                                <a class="main-portfolio-link" href="single-project.html"></a>
+                                <a class="main-portfolio-link" ></a>
                             </div>
                         </div>
                     </div>
@@ -377,18 +399,18 @@
                         <div class="img home-portfolio-image">
                             <img src="img/home-portfolio/web3.jpg" alt="Portfolio Item">
                             <div class="overlay-thumb">
-                                <a href="javascript:void(0)" class="like-product">
+                                <!-- <a href="javascript:void(0)" class="like-product">
                                     <i class="ion-ios-heart-outline"></i>
                                     <span class="like-product">Liked</span>
                                     <span class="output">1060</span>
-                                </a>
+                                </a> -->
                                 <div class="details">
                                     <span class="title">Idea Fest </span>
                                     <span class="info">2020 </span>
                                 </div>
                                 <span class="btnBefore"></span>
                                 <span class="btnAfter"></span>
-                                <a class="main-portfolio-link" href="single-project.html"></a>
+                                <a class="main-portfolio-link" ></a>
                             </div>
                         </div>
                     </div>
@@ -397,18 +419,18 @@
                         <div class="img home-portfolio-image">
                             <img src="img/home-portfolio/web4.jpg" alt="Portfolio Item">
                             <div class="overlay-thumb">
-                                <a href="javascript:void(0)" class="like-product">
+                                <!-- <a href="javascript:void(0)" class="like-product">
                                     <i class="ion-ios-heart-outline"></i>
                                     <span class="like-product">Liked</span>
                                     <span class="output">1060</span>
-                                </a>
+                                </a> -->
                                 <div class="details">
                                     <span class="title">Moosa Mehar MP</span>
                                     <span class="info">Co-Founder Tinkerhub </span>
                                 </div>
                                 <span class="btnBefore"></span>
                                 <span class="btnAfter"></span>
-                                <a class="main-portfolio-link" href="single-project.html"></a>
+                                <a class="main-portfolio-link" ></a>
                             </div>
                         </div>
                     </div>
